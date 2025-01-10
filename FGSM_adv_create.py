@@ -24,7 +24,7 @@ model.fit(np.asarray(new_X_val), np.asarray(onehot_encodedval),
 # set (i.e., non-adversarial) again to see if performance has degraded
 (loss, acc) = model.evaluate(x=np.asarray(new_X_train), y=np.asarray(onehot_encoded), verbose=0)
 print("")
-print("[INFO] normal testing images *after* fine-tuning:")
+print("[INFO] normal evaluated images *after* fine-tuning:")
 print("[INFO] loss: {:.4f}, acc: {:.4f}\n".format(loss, acc))
 # do a final evaluation of the model on the adversarial images
 #(loss, acc) = model.evaluate(x=advX, y=advY, verbose=0)
@@ -37,7 +37,7 @@ print("[INFO] generating adversarial examples with FGSM...\n")
     np.asarray(new_X_train), np.asarray(onehot_encoded), (84, 84, 3), eps=0.20))   # Can change value of epsilon here.
 # re-evaluate the model on the adversarial images
 (loss, acc) = model.evaluate(x=advX, y=advY, verbose=0)
-print("[INFO] adversarial testing images:")
+print("[INFO] adversarial trained images:")
 print("[INFO] loss: {:.4f}, acc: {:.4f}\n".format(loss, acc))
 
 ###############################################################################################
@@ -47,7 +47,7 @@ print("[INFO] loss: {:.4f}, acc: {:.4f}\n".format(loss, acc))
 print("[INFO] adversarial images *after* fine-tuning:")
 print("[INFO] loss: {:.4f}, acc: {:.4f}".format(loss, acc))
 
-##############################################################################################
+############################ Store trained adversarial samples in an array #####################################
 
 train_array_adv = []
 
@@ -86,7 +86,7 @@ model.fit(np.asarray(new_X_val), np.asarray(onehot_encodedval),
 ################################ Fine-tuning ##############################################
 (loss, acc) = model.evaluate(x=np.asarray(new_X_val), y=np.asarray(onehot_encodedval), verbose=0)
 print("")
-print("[INFO] normal testing images *after* fine-tuning:")
+print("[INFO] normal evaluated images *after* fine-tuning:")
 print("[INFO] loss: {:.4f}, acc: {:.4f}\n".format(loss, acc))
 # do a final evaluation of the model on the adversarial images
 #(loss, acc) = model.evaluate(x=advX, y=advY, verbose=0)
@@ -100,10 +100,17 @@ print("[INFO] generating adversarial examples with FGSM...\n")
     np.asarray(new_X_val), np.asarray(onehot_encodedval), (84, 84, 3), eps=0.20))  # Can change value of epsilon here.
 # re-evaluate the model on the adversarial images
 (loss, acc) = model.evaluate(x=advXval, y=advYval, verbose=0)
-print("[INFO] adversarial testing images:")
+print("[INFO] adversarial valid images:")
 print("[INFO] loss: {:.4f}, acc: {:.4f}\n".format(loss, acc))
 
-########################################################################################################
+###############################################################################################
+
+# do a final evaluation of the model on the adversarial images
+(loss, acc) = model.evaluate(x=advXval, y=advYval, verbose=0)
+print("[INFO] adversarial images *after* fine-tuning:")
+print("[INFO] loss: {:.4f}, acc: {:.4f}".format(loss, acc))
+
+############################### Store trained adversarial samples in an array ##########################################
 
 val_array_adv = []
 

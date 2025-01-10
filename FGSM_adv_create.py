@@ -120,12 +120,8 @@ for A,B in zip(advXval,onehot_encoderval.inverse_transform(advYval)):  # Need in
 Adv_X_val = [x[0] for x in val_array_adv]
 Adv_y_val= [x[1] for x in val_array_adv]
 
-print(np.shape(Adv_X_val))
-print(np.shape(Adv_y_val))
-
 Adv_intyval = []
 
 for z in Adv_y_val:
      Adv_intyval.append(int(z))
 
-print(np.shape(Adv_intyval))

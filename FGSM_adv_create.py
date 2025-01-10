@@ -34,7 +34,7 @@ print("[INFO] loss: {:.4f}, acc: {:.4f}\n".format(loss, acc))
 #################### Generate a set of adversarial from our train set ##########################
 print("[INFO] generating adversarial examples with FGSM...\n")
 (advX, advY) = next(generate_adversarial_batch(model, len(new_X_train),
-    np.asarray(new_X_train), np.asarray(onehot_encoded), (84, 84, 3), eps=0.20))  # Changed from 0.05, 0.1, 0.15, 0.20, 0.25, 0.30?
+    np.asarray(new_X_train), np.asarray(onehot_encoded), (84, 84, 3), eps=0.20))   # Can change value of epsilon here.
 # re-evaluate the model on the adversarial images
 (loss, acc) = model.evaluate(x=advX, y=advY, verbose=0)
 print("[INFO] adversarial testing images:")
@@ -97,7 +97,7 @@ print("[INFO] loss: {:.4f}, acc: {:.4f}\n".format(loss, acc))
 ################### Generate a set of adversarial from our valid set ######################
 print("[INFO] generating adversarial examples with FGSM...\n")
 (advXval, advYval) = next(generate_adversarial_batch(model, len(new_X_val),
-    np.asarray(new_X_val), np.asarray(onehot_encodedval), (84, 84, 3), eps=0.20))  # Changed from 0.05, 0.1, 0.15, 0.20, 0.25?
+    np.asarray(new_X_val), np.asarray(onehot_encodedval), (84, 84, 3), eps=0.20))  # Can change value of epsilon here.
 # re-evaluate the model on the adversarial images
 (loss, acc) = model.evaluate(x=advXval, y=advYval, verbose=0)
 print("[INFO] adversarial testing images:")

@@ -2,7 +2,7 @@
 
 **This code repository is still being updated in progress.** 
 
-This is the code repository for our ANROT-HELANet, an extension of our previous HELA-VFA work to be robust to adversarial and natural gaussian noise attacks. The work has been submitted and is currently under revision for Elsevier's Information Processing.
+This is the code repository for our ANROT-HELANet, an extension of our previous HELA-VFA work to be robust to adversarial and natural gaussian noise attacks. The work has been submitted and is currently under revision for Elsevier's International Journal of Multimedia Information Retrieval.
 
 Code repository for HELA-VFA: https://github.com/GreedYLearner1146/HELA-VFA/tree/main 
 

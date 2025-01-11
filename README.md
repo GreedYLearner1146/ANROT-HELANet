@@ -20,6 +20,11 @@ Few-Shot Learning (FSL) models have shown promising performance in learning to g
 # Model Architecture Figures
 
 The attention mechanism as well as the adversarial samples creation via FGSM:
-
 ![ANROT_HELANET_1](https://github.com/user-attachments/assets/29bc3746-1741-4942-88fc-638ea2bebe8d)
+
+Model Architecture
+![Art_HELANET_structure](https://github.com/user-attachments/assets/476ba317-1f74-4308-ae43-bf17e28d1692)
+
+
+
 

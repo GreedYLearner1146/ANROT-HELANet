@@ -25,6 +25,17 @@ The attention mechanism as well as the adversarial samples creation via FGSM:
 Model Architecture
 ![Art_HELANET_structure](https://github.com/user-attachments/assets/476ba317-1f74-4308-ae43-bf17e28d1692)
 
+# Preliminary Results
 
+The selected methods (to be appeared in the paper to be published) are based on the approaches by Roy et.al. `FeLMi : Few shot Learning with hard Mixup' [1]. The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for each benchmarked datasets when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
+
+| Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
+| ------ | ------| ------| 
+|*CIFAR-FS**| **78.7 $\pm$ 0.7** | **90.6 $\pm$ 0.5** |
+|*FC-100**| **50.2 $\pm$ 0.6** | **69.6 $\pm$ 0.6** |
+|*miniImageNet**| **69.4 $\pm$ 0.3** | **88.1 $\pm$ 0.4** |
+|*tiredImageNet**| **73.5 $\pm$ 0.2** | **88.5 $\pm$ 0.8** |
+
+The backbone for our HELA-VFA is the ResNet-12.
 
 

@@ -40,6 +40,8 @@ The backbone for our HELA-VFA is the ResNet-12.
 
 # Image Reconstruction Preliminary Results
 
+![image](https://github.com/user-attachments/assets/aebcc368-3695-41a0-8fc7-87619611fc50)
+
 
 
 ## Code Instructions ##

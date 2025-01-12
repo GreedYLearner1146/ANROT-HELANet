@@ -33,7 +33,7 @@ The selected methods (to be appeared in the paper to be published) are based on 
 | ------ | ------| ------| 
 |ANROT-HELANet| **69.4 $\pm$ 0.3** | **88.1 $\pm$ 0.4** |
 
-The instructional code and values for the remaining benchmarked wil be available in the future. The backbone for our HELA-VFA is the ResNet-12.
+The instructional code and values for the remaining benchmarked will be available in the future. The backbone for our HELA-VFA is the ResNet-12.
 
 # Image Reconstruction Preliminary Results
 
@@ -49,4 +49,4 @@ We note that in our experiment in this section, the Frechet Inception Distance (
 
 
 ## Code Instructions ##
-The codes instructions presented in this github utilized miniImageNet as an example.
+The codes instructions presented in this github utilized miniImageNet as an example. The instructional codes for the remaining benchmarked will be available in the future.

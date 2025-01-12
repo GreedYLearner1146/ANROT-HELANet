@@ -42,6 +42,14 @@ The backbone for our HELA-VFA is the ResNet-12.
 
 ![image](https://github.com/user-attachments/assets/aebcc368-3695-41a0-8fc7-87619611fc50)
 
+We note that in our experiment in this section, the Frechet Inception Distance (FID) [2] was used to evaluate the quality of the reconstructed images from our generative model. 
+
+| Method | FID |
+| ------ | ------|
+|*KL Divergence**|  |
+|*Wasserstein Distance**||
+|*Hellinger Distance**|  |
+
 
 
 ## Code Instructions ##

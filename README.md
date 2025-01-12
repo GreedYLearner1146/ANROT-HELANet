@@ -31,7 +31,7 @@ The selected methods (to be appeared in the paper to be published) are based on 
 
 | Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
 | ------ | ------| ------| 
-|*miniImageNet**| **69.4 $\pm$ 0.3** | **88.1 $\pm$ 0.4** |
+|ANROT-HELANet| **69.4 $\pm$ 0.3** | **88.1 $\pm$ 0.4** |
 
 The instructional code and values for the remaining benchmarked wil be available in the future. The backbone for our HELA-VFA is the ResNet-12.
 

@@ -27,22 +27,19 @@ Model Architecture
 
 # Preliminary Results
 
-The selected methods (to be appeared in the paper to be published) are based on the approaches by Roy et.al. `FeLMi : Few shot Learning with hard Mixup' [1]. The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for each benchmarked datasets when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
+The selected methods (to be appeared in the paper to be published) are based on the approaches by Roy et.al. `FeLMi : Few shot Learning with hard Mixup' [1]. The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the miniImageNet benchmarked dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
 
 | Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
 | ------ | ------| ------| 
-|*CIFAR-FS**| **78.7 $\pm$ 0.7** | **90.6 $\pm$ 0.5** |
-|*FC-100**| **50.2 $\pm$ 0.6** | **69.6 $\pm$ 0.6** |
 |*miniImageNet**| **69.4 $\pm$ 0.3** | **88.1 $\pm$ 0.4** |
-|*tiredImageNet**| **73.5 $\pm$ 0.2** | **88.5 $\pm$ 0.8** |
 
-The backbone for our HELA-VFA is the ResNet-12.
+The instructional code and values for the remaining benchmarked wil be available in the future. The backbone for our HELA-VFA is the ResNet-12.
 
 # Image Reconstruction Preliminary Results
 
 ![image](https://github.com/user-attachments/assets/aebcc368-3695-41a0-8fc7-87619611fc50)
 
-We note that in our experiment in this section, the Frechet Inception Distance (FID) [2] was used to evaluate the quality of the reconstructed images from our generative model. The smaller the FID, the better the reconstructed image quality.
+We note that in our experiment in this section, the Frechet Inception Distance (FID) [2] was used to evaluate the quality of the reconstructed images from our generative model. The smaller the FID, the better the reconstructed image quality. We utilized the miniImageNet images for the reconstruction evaluation.
 
 | Method | FID |
 | ------ | ------|

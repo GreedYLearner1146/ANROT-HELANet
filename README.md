@@ -50,3 +50,5 @@ We note that in our experiment in this section, the Frechet Inception Distance (
 
 ## Code Instructions ##
 The codes instructions presented in this github utilized miniImageNet as an example. The instructional codes for the remaining benchmarked will be available in the future.
+
+1) Run data_loading.py which load the datasets of your choice. Here we load and run the miniImageNet dataset.

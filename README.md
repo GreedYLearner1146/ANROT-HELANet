@@ -54,4 +54,5 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 1) Run data_loading.py which load the datasets of your choice. Here we load and run the miniImageNet dataset.
 2) Run data_augmentation_and_dataloader.py., which contains the data augmentation procedure and the pytorch dataloader class for the meta-train and valid set.
 3) Run one_hot_encode.py to one-hot encode the labels of the datasets.
-4) Run FGSM_adv_create.py which creates the adversarial samples and stored them in the respective arrays using the FGSM. 
+4) Run FGSM_adv_create.py which creates the adversarial samples and store them in the respective arrays using the FGSM.
+5) 4) Run natural_noise_create.py which creates the image corrupted by gaussian noise and store them in the respective arrays.

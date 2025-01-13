@@ -8,6 +8,11 @@ from torchvision.transforms import (
 
 from torchvision import transforms
 from torchvision.transforms import v2
+import torch
+import torchvision.transforms as T
+from torch.utils.data import Dataset
+from torch.utils.data import DataLoader
+from torch.utils.data import default_collate
 
 ################# We emphasize the role of data augmentation here. ##########################
 
@@ -34,8 +39,7 @@ data_transform_valtest = transforms.Compose(
                                  std=[0.229, 0.224, 0.225])
        ])
 
-import torch
-import torchvision.transforms as T
+
 
 class Augment:
    """
@@ -65,11 +69,6 @@ class Augment:
    def __call__(self, x):
        return self.train_transform(x), self.train_transform(x)
 
-  from torch.utils.data import Dataset
-from torch.utils.data import DataLoader
-
-from torch.utils.data import default_collate
-from torchvision.transforms import v2
 
 #################### Cutmix or MixUp data augmentation ################################
 

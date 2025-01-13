@@ -14,7 +14,7 @@ model.compile(loss="categorical_crossentropy", optimizer=opt,
     metrics=["accuracy"])
 # train the simple CNN 
 print("[INFO] training network...")
-model.fit(np.asarray(new_X_val), np.asarray(onehot_encodedval),
+model.fit(np.asarray(new_X_train), np.asarray(onehot_encoded),
     #validation_data=(testX, testY),
     batch_size=64,
     epochs=100,

@@ -53,3 +53,4 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 
 1) Run data_loading.py which load the datasets of your choice. Here we load and run the miniImageNet dataset.
 2) Run data_augmentation_and_dataloader.py., which contains the data augmentation procedure and the pytorch dataloader class for the meta-train and valid set.
+3) Run one_hot_encode.py to one-hot encode the labels of the datasets.

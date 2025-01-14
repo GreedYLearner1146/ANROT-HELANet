@@ -56,3 +56,4 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 3) Run one_hot_encode.py to one-hot encode the labels of the datasets.
 4) Run FGSM_adv_create.py which creates the adversarial samples and store them in the respective arrays using the FGSM.
 5) Run natural_noise_create.py which creates the image corrupted by gaussian noise and store them in the respective arrays.
+6) Run Attention.py and ResNet12.py, which are part of the encoder component of the ANROT-HELANet.

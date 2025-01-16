@@ -1,6 +1,6 @@
 class ANROT_HELANet(nn.Module):
     def __init__(self, backbone: nn.Module):
-        super(HELA_VFA, self).__init__()
+        super(ANROT_HELANet, self).__init__()
         self.backbone = backbone
 
     def forward(

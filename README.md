@@ -60,3 +60,4 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 7) Run Hellinger_dist.py, which contains the hellinger distance computation code.
 8) Run ANROT_HELANet.py which contains the main code backbone of our algorithm.
 9) Run hyperparameters.py, followed by val_task_sampler_and_loader.py and train_task_sampler_and_loader.py.
+10) Run the sub-functions contained in the folder Hesim, which comprise the codes for the various helper functions leading up to the Hesim loss function as highlighted in our paper. The helper functions are mainly adapted from the pytorch metric learning library by Kevin Musgrave: https://github.com/KevinMusgrave/pytorch-metric-learning.

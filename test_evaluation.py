@@ -53,6 +53,8 @@ new_X_test = [x[0] for x in test_array]
 new_y_test = [x[1] for x in test_array]
 
 
+test_dataset =  miniImageNet_CustomDataset(new_X_test,new_y_test, transform=[None])
+
 ################## One hot encode all label test array. ###########################
 
 from numpy import array
@@ -120,11 +122,10 @@ Adv_intytest = []
 for z in Adv_y_test:
      Adv_intytest.append(int(z))
 
-test_dataset =  miniImageNet_CustomDataset(Adv_X_test,Adv_intytest, transform=[None])
-test_dataloader = DataLoader(test_dataset, batch_size=16, shuffle=True)
+test_dataset_adv =  miniImageNet_CustomDataset(Adv_X_test,Adv_intytest, transform=[None])
+test_dataloader = DataLoader([test_dataset,test_dataset_adv], batch_size=16, shuffle=True)
 
 ############################### Evaluate on one task ########################################
-
 def evaluate_on_one_task(
     support_images: torch.Tensor,
     support_labels: torch.Tensor,
@@ -143,8 +144,6 @@ def evaluate_on_one_task(
         )[1]
         == query_labels.cuda()
     ).sum().item(), len(query_labels)
-
-####################################################################################################
 
 def evaluate(data_loader: DataLoader):
     # We'll count everything and compute the ratio at the end

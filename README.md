@@ -66,3 +66,5 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 13) Finally, run test_evaluation.py for the evaluation of our model on the meta-test dataset.
 
 ## Code Instructions (for generating the reconstructed images) ##
+
+1) Run FID.py, which contains the code for running the Frechet Inception Distance computation for the first 10000 miniImageNet samples to be reconstructed.

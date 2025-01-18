@@ -68,3 +68,4 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 ## Code Instructions (for generating the reconstructed images) ##
 
 1) Run FID.py, which contains the code for running the Frechet Inception Distance computation for the first 10000 miniImageNet samples to be reconstructed.
+2) Run reconstruction.py, which contains the backbone code 

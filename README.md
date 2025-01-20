@@ -68,4 +68,4 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 ## Code Instructions (for generating the reconstructed images) ##
 
 1) Run FID.py, which contains the code for running the Frechet Inception Distance computation for the first 10000 miniImageNet samples to be reconstructed.
-2) Run reconstruction.py, which contains the backbone code 
+2) Run reconstruction.py, which contains the backbone code for running the image reconstruction and FID computation. In the VAE class, the various distances laid out in the paper can be computed and compared via un-commenting and commenting the respective distance code sections (KL divergence, Hellinger Distance, Wasserstein Distance).

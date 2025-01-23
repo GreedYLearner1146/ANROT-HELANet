@@ -26,5 +26,5 @@ for f1v in range (len(new_X_val)):
 
 #################################### Dataloader ##############################
 
-train_dataset_natural_noise = miniImageNet_CustomDataset(noisyI,new_y_train, transform=[None]) # Combined data transform. Augment is from Data_Augmentation.py
-val_dataset_natural_noise =  miniImageNet_CustomDataset(noisyIval,new_y_val, transform=[None])
+train_dataset_nat = miniImageNet_CustomDataset(noisyI,new_y_train, transform=[None]) # Combined data transform. Augment is from Data_Augmentation.py
+val_dataset_nat =  miniImageNet_CustomDataset(noisyIval,new_y_val, transform=[None])

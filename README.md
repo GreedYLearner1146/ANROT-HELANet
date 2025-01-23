@@ -54,16 +54,17 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 1) Run data_loading.py which load the datasets of your choice. Here we load and run the miniImageNet dataset.
 2) Run data_augmentation_and_dataloader.py., which contains the data augmentation procedure and the pytorch dataloader class for the meta-train and valid set.
 3) Run one_hot_encode.py to one-hot encode the labels of the datasets.
-4) Run FGSM_adv_create.py which creates the adversarial samples and store them in the respective arrays using the FGSM. Then run the adv_dataloader.py to load their dataloader counterparts.
+4) Run FGSM_adv_create.py which creates the adversarial samples and store them in the respective arrays using the FGSM.
 5) Run natural_noise_create.py which creates the image corrupted by gaussian noise and store them in the respective arrays.
-6) Run Attention.py and ResNet12.py, which are part of the encoder component of the ANROT-HELANet.
-7) Run Hellinger_dist.py, which contains the hellinger distance computation code.
-8) Run ANROT_HELANet.py which contains the main code backbone of our algorithm.
-9) Run hyperparameters.py, followed by val_task_sampler_and_loader.py and train_task_sampler_and_loader.py.
-10) Run the sub-functions contained in the folder Hesim, which comprise the codes for the various helper functions leading up to the Hesim loss function as highlighted in our paper. The helper functions are mainly adapted from the pytorch metric learning library by Kevin Musgrave: https://github.com/KevinMusgrave/pytorch-metric-learning. Please run the functions in the following orders: Common_functions.py -> loss_and_miners_utils.py -> Module_With_Records.py -> Base_Reducers.py -> MeanReducer.py -> MultipleReducers_Do_Nothing_Reducers.py -> BaseDistances.py -> LpDistance.py -> ModulesWithRecordsandReducer.py -> Mixins.py -> BaseMetricLossFunction.py -> GenericPairLoss.py -> HesimLoss.py.
-11) Run loss_functions.py, which contains the categorical cross-entropy loss and Hesim loss code combination.
-12) Run training.py for the training loop.
-13) Finally, run test_evaluation.py for the evaluation of our model on the meta-test dataset.
+6) Run the overall_dataloader.py to load the dataloader that comprised of the original images, adversarially corrupted images, and the gaussian corrupted images, all along with their respective labels. This facilitates the simultaneous adversarial and natural noise training to enhance their robustness to such noises in the test phase.
+7) Run Attention.py and ResNet12.py, which are part of the encoder component of the ANROT-HELANet.
+8) Run Hellinger_dist.py, which contains the hellinger distance computation code.
+9) Run ANROT_HELANet.py which contains the main code backbone of our algorithm.
+10) Run hyperparameters.py, followed by val_task_sampler_and_loader.py and train_task_sampler_and_loader.py.
+11) Run the sub-functions contained in the folder Hesim, which comprise the codes for the various helper functions leading up to the Hesim loss function as highlighted in our paper. The helper functions are mainly adapted from the pytorch metric learning library by Kevin Musgrave: https://github.com/KevinMusgrave/pytorch-metric-learning. Please run the functions in the following orders: Common_functions.py -> loss_and_miners_utils.py -> Module_With_Records.py -> Base_Reducers.py -> MeanReducer.py -> MultipleReducers_Do_Nothing_Reducers.py -> BaseDistances.py -> LpDistance.py -> ModulesWithRecordsandReducer.py -> Mixins.py -> BaseMetricLossFunction.py -> GenericPairLoss.py -> HesimLoss.py.
+12) Run loss_functions.py, which contains the categorical cross-entropy loss and Hesim loss code combination.
+13) Run training.py for the training loop.
+14) Finally, run test_evaluation.py for the evaluation of our model on the meta-test dataset.
 
 ## Code Instructions (for generating the reconstructed images) ##
 

@@ -28,6 +28,3 @@ for f1v in range (len(new_X_val)):
 
 train_dataset_natural_noise = miniImageNet_CustomDataset(noisyI,new_y_train, transform=[None]) # Combined data transform. Augment is from Data_Augmentation.py
 val_dataset_natural_noise =  miniImageNet_CustomDataset(noisyIval,new_y_val, transform=[None])
-
-train_dataloader_noise = DataLoader(train_dataset_natural_noise, batch_size=16, shuffle=True, collate_fn=collate_fn) # Collate_fn called on here.
-val_dataloader_noise = DataLoader(val_dataset_natural_noise, batch_size=16, shuffle=True) # Collate_fn called on here.

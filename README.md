@@ -77,4 +77,5 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 
 ## Relevant References ##
 
-(To be available soon.)
+[1] A. Roy, A. Shah, K. Shah, P. Dhar, A. Cherian, and R. Chellappa, “Felmi: Few shot learning with hard mixup,” in Advances in Neural Information Process�ing Systems, 2022. 5, 6.
+[2]  M. Heusel, H. Ramsauer, T. Unterthiner, B. Nessler, and S. Hochreiter, “Gans trained by a two time-scale update rule converge to a local nash equilibrium,” Advances in neural information processing systems, vol. 30, 2017.

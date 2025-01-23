@@ -33,7 +33,7 @@ The selected methods (to be appeared in the paper to be published) are based on 
 | ------ | ------| ------| 
 |ANROT-HELANet| **69.4 $\pm$ 0.3** | **88.1 $\pm$ 0.4** |
 
-The instructional code and values for the remaining benchmarked will be available in the future. The backbone for our HELA-VFA is the ResNet-12.
+The instructional code and values for the remaining benchmarked will be available in the future. The backbone for our model here is the ResNet-12.
 
 # Image Reconstruction Preliminary Results
 

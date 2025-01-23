@@ -54,7 +54,7 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 1) Run data_loading.py which load the datasets of your choice. Here we load and run the miniImageNet dataset.
 2) Run data_augmentation_and_dataloader.py., which contains the data augmentation procedure and the pytorch dataloader class for the meta-train and valid set.
 3) Run one_hot_encode.py to one-hot encode the labels of the datasets.
-4) Run FGSM_adv_create.py which creates the adversarial samples and store them in the respective arrays using the FGSM.
+4) Run FGSM_adv_create.py which creates the adversarial samples and store them in the respective arrays using the FGSM [3].
 5) Run natural_noise_create.py which creates the image corrupted by gaussian noise and store them in the respective arrays.
 6) Run the overall_dataloader.py to load the dataloader that comprised of the original images, adversarially corrupted images, and the gaussian corrupted images, all along with their respective labels. This facilitates the simultaneous adversarial and natural noise training to enhance their robustness to such noises in the test phase.
 7) Run Attention.py and ResNet12.py, which are part of the encoder component of the ANROT-HELANet.
@@ -77,5 +77,6 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 
 ## Relevant References ##
 
-[1] A. Roy, A. Shah, K. Shah, P. Dhar, A. Cherian, and R. Chellappa, “Felmi: Few shot learning with hard mixup,” in Advances in Neural Information Process�ing Systems, 2022. 5, 6.
-[2]  M. Heusel, H. Ramsauer, T. Unterthiner, B. Nessler, and S. Hochreiter, “Gans trained by a two time-scale update rule converge to a local nash equilibrium,” Advances in neural information processing systems, vol. 30, 2017.
+[1] A. Roy, A. Shah, K. Shah, P. Dhar, A. Cherian, and R. Chellappa, “Felmi: Few shot learning with hard mixup,” in Advances in Neural Information Processing Systems, 2022. 5, 6. \
+[2]  M. Heusel, H. Ramsauer, T. Unterthiner, B. Nessler, and S. Hochreiter, “Gans trained by a two time-scale update rule converge to a local nash equilibrium,” Advances in neural information processing systems, vol. 30, 2017. \
+[3] I. J. Goodfellow, J. Shlens, C. Szegedy, Explaining and harnessing adversarial examples, arXiv preprint arXiv:1412.6572 (2014).

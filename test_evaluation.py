@@ -123,7 +123,27 @@ for z in Adv_y_test:
      Adv_intytest.append(int(z))
 
 test_dataset_adv =  miniImageNet_CustomDataset(Adv_X_test,Adv_intytest, transform=[None])
-test_dataloader = DataLoader([test_dataset,test_dataset_adv], batch_size=16, shuffle=True)
+
+###########################################################################################
+
+noisyItest= []
+
+# Mean = 0, std = 0.005, 0.10, 0.15
+
+for f1t in range (len(new_X_test)):
+  imgt = new_X_test[f1t]
+  mean = 0.0   # some constant
+  std = 0.05   # some constant (standard deviation)
+  noisy_imgIt = imgt + np.random.normal(mean, std, imgt.shape)
+  noisy_img_clippedIt = np.clip(noisy_imgIt, 0, 255)  # we might get out of bounds due to noise
+  noisy_img_clippedIt  = np.asarray(noisy_img_clippedIt) # REMEMBER TO ADD CONVERT TO ASARRAY FIRST BEFORE APPENDING!!!!!!
+  noisyItest.append(noisy_img_clippedIt)
+
+test_dataset_nat =  miniImageNet_CustomDataset(noisyItest, new_y_test, transform=[None])
+
+##########################################################################################
+
+test_dataloader = DataLoader([test_dataset,test_dataset_adv,test_dataset_nat], batch_size=16, shuffle=True)
 
 ############################### Evaluate on one task ########################################
 def evaluate_on_one_task(

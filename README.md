@@ -75,7 +75,19 @@ The codes instructions presented in this github utilized miniImageNet as an exam
 
 ## Citation Information ##
 
-(To be available soon.)
+If you find our work useful, please cite them as below: 
+
+Lee, G.Y., Dam, T., Ferdaus, M.M., Poenar, D.P., Duong, V.N.: Anrot-helanet: Adverserially and naturally robust attention-based aggregation network via the hellinger distance for few-shot classification. arXiv preprint arXiv:2509.11220 (2025).
+
+Alternatively, you can use the following BibTeX entry:
+
+@article{lee2025anrot, \
+  title={ANROT-HELANet: Adverserially and Naturally Robust Attention-Based Aggregation Network via The Hellinger Distance for Few-Shot Classification}, \
+  author={Lee, Gao Yu and Dam, Tanmoy and Ferdaus, Md Meftahul and Poenar, Daniel Puiu and Duong, Vu N}, \
+  journal={arXiv preprint arXiv:2509.11220}, \
+  year={2025}
+}
+
 
 ## Relevant References ##
 

@@ -11,7 +11,6 @@ Link to the Sicara Few-Shot github page: https://github.com/sicara/easy-few-shot
 
 All codes that is and will be shown here are presented in PyTorch format. The backbone for our ANROT-HELANet, like the HELA-VFA, is the ResNet-12.
 
-**(This repo will be updated as times go. Stay tune for changes.)**
 
 # Abstract 
 
